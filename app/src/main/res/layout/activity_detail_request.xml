@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".detailRequest">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Detail Form "
+        android:textSize="25sp"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/dr_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Judul Bukunya"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/dr_cover"
+        android:layout_width="189dp"
+        android:layout_height="275dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/tiger" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Author :  "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dr_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Si penulis nya"
+        android:textColor="#00BCD4"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/dr_synopsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Synopsis :  "
+        android:textSize="20sp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:columnCount="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Requester email : "
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/dr_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Nama yang pesan"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Receiver email : "
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/dr_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Nama yang menerima"
+            android:textSize="20sp" />
+
+    </GridLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_accept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        />
+
+</LinearLayout>

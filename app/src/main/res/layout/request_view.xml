@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_request"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:layout_margin="10dp"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:id="@+id/rq_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_columnSpan="3"
+            android:layout_marginBottom="5dp"
+            android:text="Harry Potter and The Sorcerer Stone"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:text="Author : "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/rq_author"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:text="J.K.Rowling"
+            android:layout_columnSpan="2"
+            android:textColor="#00BCD4"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/rq_cover"
+            android:layout_width="191dp"
+            android:layout_height="303dp"
+            android:layout_columnSpan="3"
+            android:layout_gravity="center"
+            android:layout_marginRight="15sp"
+            app:srcCompat="@drawable/harry_potter" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:text="Requester email : "
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/rq_request"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:text="Email"
+            android:layout_columnSpan="2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:text="Receiver email :"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/rq_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:text="Email Receiverr"
+            android:layout_columnSpan="2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="3"
+            android:id="@+id/rq_synopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            />
+
+    </GridLayout>
+
+
+</androidx.cardview.widget.CardView>

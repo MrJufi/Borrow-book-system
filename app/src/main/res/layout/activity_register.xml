@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    tools:context=".Register">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="328dp"
+        android:layout_height="118dp"
+        android:layout_columnSpan="3"
+        android:layout_columnWeight="1"
+        app:srcCompat="@drawable/book" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_columnSpan="3"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perpus Online"
+        android:textAllCaps="true"
+        android:textColor="@color/teal_200"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_columnSpan="3"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="15sp"
+        android:padding="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="1"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="15sp"
+        android:padding="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="1"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textSize="15sp"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="1"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Of Birth :"
+        android:textSize="15sp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Select Date.."
+        android:textColor="#673AB7"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <CheckBox
+        android:id="@+id/cb_terms"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="3"
+        android:layout_columnWeight="1"
+        android:text="I Agree with all the terms"
+        />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:layout_columnSpan="3"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center_horizontal"
+        />
+</GridLayout>
